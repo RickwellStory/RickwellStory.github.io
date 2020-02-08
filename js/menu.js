@@ -74,14 +74,29 @@
 		perspectiveWrapper.addEventListener( clickevent, function( ev ) { return false; } );
 	}
 	function changeSocialIcons(reverse){
-		let socialMedia = document.querySelector('.social-media')
-			for(let i = 0; i<socialMedia.children.length; i++){
-				if(reverse){
-					socialMedia.children[i].children[0].style.fill = '#fff'
+		let socialMedia = document.querySelector('.share-toggle-button')
+		let socialMediaIcon = document.getElementsByClassName('share-button')
+		if(reverse){
+			setTimeout(()=>{
+				socialMedia.style.backgroundColor = '#fff'
+				socialMedia.style.color = '#403f48'
+				for(let i = 0; i<socialMediaIcon.length; i++){
+					socialMediaIcon[i].style.backgroundColor = '#fff'
+					socialMediaIcon[i].style.color = '#403f48'
 				}
-				else socialMedia.children[i].children[0].style.fill = ''
-				
-			}
+			} , 200)
+			
+		}
+		else{
+			setTimeout(()=>{
+				socialMedia.style.backgroundColor = ''
+				socialMedia.style.color = ''
+				for(let i = 0; i<socialMediaIcon.length; i++){
+					socialMediaIcon[i].style.backgroundColor = ''
+					socialMediaIcon[i].style.color = ''
+				}
+			} , 200)
+		}
 	}
 
 	init();

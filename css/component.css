@@ -1,6 +1,7 @@
 html, body, .perspective {
-	width: 100%;
+	width: 99.5%;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 .perspective {
@@ -62,6 +63,14 @@ html, body, .perspective {
 .header-menu__personal-info{
 
 }
+@media screen and (max-width: 500px){
+	.header-menu__personal-info{
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+}
 .header-menu__personal-info__name{
 	font-size: 90px;
 	font-weight: 100;
@@ -72,6 +81,12 @@ html, body, .perspective {
 @media screen and (max-width: 500px){
 	.header-menu__personal-info__name{
 		font-size: 60px;
+		width: 80%;
+	}
+}
+@media screen and (max-width: 340px){
+	.header-menu__personal-info__name{
+		font-size: 50px;
 	}
 }
 .header-menu__personal-info__description{
@@ -80,6 +95,17 @@ html, body, .perspective {
 	font-weight: 100;
 	-webkit-animation: tilt-in-left-2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both .3s;
 	        animation: tilt-in-left-2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both .3s;
+}
+@media screen and (max-width: 340px){
+	.header-menu__personal-info__description{
+		font-size: 25px;
+	}
+}
+.large-header{
+	/* background-color: #24232d; */
+	position: absolute;
+	z-index: -1;
+	top: 0;
 }
 .burger{
 	width: 200px;
