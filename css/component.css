@@ -65,10 +65,15 @@ html, body, .perspective {
 }
 @media screen and (max-width: 500px){
 	.header-menu__personal-info{
+		display: -webkit-box;
 		display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-    	align-items: center;
+    	-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+    	        flex-direction: column;
+    	-webkit-box-pack: center;
+    	        justify-content: center;
+    	-webkit-box-align: center;
+    	        align-items: center;
 	}
 }
 .header-menu__personal-info__name{
