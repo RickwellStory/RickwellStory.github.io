@@ -308,7 +308,13 @@ html, body, .perspective {
 	transition-property: transform, opacity;
 	transition-property: transform, opacity, -webkit-transform;
 	letter-spacing: 2px;
-  }
+}
+@media screen and (max-width:500px){
+	.outer-nav a::before{
+		left: 0;
+		width: 30%;
+	}
+}
 
 .outer-nav a:hover {
 	-webkit-transform: translateY(-5px) !important;
