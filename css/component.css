@@ -60,6 +60,17 @@ html, body, .perspective {
 	-webkit-box-align: center;
 	        align-items: center;
 }
+@media screen and (max-width: 500px){
+	.header-menu{
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
 .header-menu__personal-info{
 
 }

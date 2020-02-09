@@ -78,10 +78,10 @@
 		let socialMediaIcon = document.getElementsByClassName('share-button')
 		if(reverse){
 			setTimeout(()=>{
-				socialMedia.style.backgroundColor = '#fff'
+				socialMedia.style.background = '#fff'
 				socialMedia.style.color = '#403f48'
 				for(let i = 0; i<socialMediaIcon.length; i++){
-					socialMediaIcon[i].style.backgroundColor = '#fff'
+					socialMediaIcon[i].style.background = '#fff'
 					socialMediaIcon[i].style.color = '#403f48'
 				}
 			} , 200)
@@ -89,10 +89,10 @@
 		}
 		else{
 			setTimeout(()=>{
-				socialMedia.style.backgroundColor = ''
+				socialMedia.style.background = ''
 				socialMedia.style.color = ''
 				for(let i = 0; i<socialMediaIcon.length; i++){
-					socialMediaIcon[i].style.backgroundColor = ''
+					socialMediaIcon[i].style.background = ''
 					socialMediaIcon[i].style.color = ''
 				}
 			} , 200)
