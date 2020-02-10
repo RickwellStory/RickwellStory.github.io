@@ -66,9 +66,9 @@ html, body, .perspective {
 }
 @media screen and (max-width: 500px){
 	.header-menu{
-		width: auto;
-		height: auto;
-		position: absolute;
+		/* width: auto;
+		height: auto; */
+		position: relative;
 		top: 0;
 		left: 0;
 		right: 0;
