@@ -95,6 +95,7 @@ html, body, .perspective {
 	font-size: 90px;
 	font-weight: 100;
 	margin: 0;
+	color:#100b07;
 	-webkit-animation: tilt-in-left-2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: tilt-in-left-2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -112,6 +113,7 @@ html, body, .perspective {
 .header-menu__personal-info__description{
 	font-size: 30px;
 	margin: 0;
+	color: #3c3939;
 	font-weight: 100;
 	-webkit-animation: tilt-in-left-2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both .3s;
 	        animation: tilt-in-left-2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both .3s;
@@ -130,7 +132,8 @@ html, body, .perspective {
 .burger{
 	width: 200px;
 	height: 150px;
-	background-color: #403f48;
+	/* background-color: #403f48; */
+	background-color: #3c3939;
 	-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%);
 	        clip-path: polygon(0 0%, 100% 0%, 100% 100%);
 	cursor: pointer;
@@ -244,6 +247,15 @@ html, body, .perspective {
 } 
 .main-content__about{
 	height: 100vh;
+	display: flex;
+}
+.main-content__about__picture{
+	font-size: 40px;
+	width: 50%;
+}
+.main-content__about__content{
+	font-size: 40px;
+	width: 50%;
 }
 
 /* Modal view */
@@ -392,6 +404,7 @@ html, body, .perspective {
 /* Effect airbnb */
 .effect-airbnb {
 	/* background: #403f48; */
+	background: #3c3939;
 }
 
 .effect-airbnb .container {
@@ -523,3 +536,27 @@ html, body, .perspective {
 		margin-bottom: 20px;
 	}
 }
+
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	/* background: #03adcc;  */
+	background: #a99b76; 
+	border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #6f4826; 
+  }

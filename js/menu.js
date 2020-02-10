@@ -79,10 +79,10 @@
 		if(reverse){
 			setTimeout(()=>{
 				socialMedia.style.background = '#fff'
-				socialMedia.style.color = '#403f48'
+				socialMedia.style.color = '#3c3939'
 				for(let i = 0; i<socialMediaIcon.length; i++){
 					socialMediaIcon[i].style.background = '#fff'
-					socialMediaIcon[i].style.color = '#403f48'
+					socialMediaIcon[i].style.color = '#3c3939'
 				}
 			} , 200)
 			
