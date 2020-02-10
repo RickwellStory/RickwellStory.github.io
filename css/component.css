@@ -242,13 +242,9 @@ html, body, .perspective {
 	-webkit-transform: translateY(5px);
 			transform: translateY(5px);
 } 
-/* 
-.component {
-	margin: 0 auto;
-	width: 60%;
-	text-align: justify;
-	font-size: 1.5em;
-} */
+.main-content__about{
+	height: 100vh;
+}
 
 /* Modal view */
 .perspective.modalview {
@@ -395,7 +391,7 @@ html, body, .perspective {
 
 /* Effect airbnb */
 .effect-airbnb {
-	background: #403f48;
+	/* background: #403f48; */
 }
 
 .effect-airbnb .container {

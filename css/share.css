@@ -80,6 +80,9 @@ a.share-button:focus {
 .share-item {
   display: inline-block;
 }
+.fa{
+  line-height: inherit;
+}
 @media screen and (max-width: 500px){
   .share-icon{
     -webkit-transform: rotate(-40deg);
