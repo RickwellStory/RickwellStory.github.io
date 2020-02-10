@@ -100,5 +100,13 @@
 	}
 
 	init();
+	let scene = document.getElementById('scene');
+	let parallaxInstance = new Parallax(scene,{
+		hoverOnly: false,
+		invertX: true,
+		invertY: false,
+		scalarX: 15.0,
+		pointerEvents: true
+	});
 
 })();
