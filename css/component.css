@@ -247,6 +247,7 @@ html, body, .perspective {
 } 
 .main-content__about{
 	height: 100vh;
+	display: -webkit-box;
 	display: flex;
 }
 .main-content__about__picture{
