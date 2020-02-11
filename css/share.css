@@ -58,7 +58,8 @@
 }
 
 a.share-button {
-  color: rgb(198, 200, 200);
+  /* color: rgb(198, 200, 200); */
+  color: #d9990b;
 }
 
 a.share-button:hover, 
