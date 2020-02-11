@@ -88,7 +88,7 @@ a.share-button:focus {
 }
 @media screen and (max-width: 500px){
   .share-icon{
-    -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg)!important;
+            transform: rotate(-40deg)!important;
   }
 }
