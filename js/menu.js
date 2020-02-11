@@ -1,5 +1,8 @@
 (function() {
-	
+		AOS.init({
+			offset: 0,
+			once: false
+		});
 	function scrollY() {
 		return window.pageYOffset || docElem.scrollTop;
 	}
@@ -110,3 +113,6 @@
 	});
 
 })();
+document.querySelector('.perspective').addEventListener('scroll', function(){
+	AOS.refresh()
+})

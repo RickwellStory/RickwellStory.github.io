@@ -255,6 +255,9 @@ html, body, .perspective {
 	flex-wrap: wrap;
 }
 .main-content__about__h{
+	
+}
+.main-h{
 	width: 100%;
 	font-size: 80px;
 	font-weight: 100;
@@ -263,12 +266,14 @@ html, body, .perspective {
 .main-content__about__picture{
 	width: 45%;
 	height: 600px;
-	display: -webkit-box;
+	position: relative;
+	left: 10%;
+	/* display: -webkit-box;
 	display: flex;
 	-webkit-box-align: center;
 	        align-items: center;
 	-webkit-box-pack: center;
-	        justify-content: center;
+			justify-content: center; */
 }
 @media screen and (max-width: 500px){
 	.main-content__about__picture{
@@ -276,13 +281,35 @@ html, body, .perspective {
 		height: 400px;
 	}
 }
-.main-content__about__picture__img{
-	background-image: url(./../photo.jpg);
+.border{
+	position: absolute;
+	left: 40%;
+	width: 58%;
+	height: 93%;
+	z-index: 1;
+}
+.border:nth-of-type(2){
+	background-image:linear-gradient(#a99b7662, #3c393965);
 	background-size: contain;
 	background-repeat: no-repeat;
-	width: 62%;
-	height: 95%;
+}
+.border:nth-of-type(3){
+	background-image:  linear-gradient(#d9980b62, #6f482660);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+.main-content__about__picture__img{
+	background-image: url(../assets/images/photo.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 58%;
+	height: 93%;
 	box-sizing: border-box;
+	transition: filter 1s;
+	z-index: 2;
+	/* box-shadow: 2px 0px 15px black; */
 }
 @media screen and (max-width: 500px){
 	.main-content__about__picture__img{
@@ -306,6 +333,85 @@ html, body, .perspective {
 		width: 100%;
 		text-align: center;
 	}
+}
+.main-content__skills{
+	padding-top: 5%;
+	height: 100vh;
+}
+.main-content__skills__icons{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-content__skills__icons__picture-column{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+.html , .css , .javascript, .angular, .sass, .jquery, .bootstrap{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	transition: 1s;
+	cursor: pointer;
+}
+.html:hover , .css:hover , .javascript:hover, .angular:hover, .sass:hover, .jquery:hover, .bootstrap:hover{
+	transform: translateY(-5px) scale(1.1) !important;
+}
+.html::before , .css::before , .javascript::before, .angular::before, .sass::before, .jquery::before, .bootstrap::before{
+	pointer-events: none;
+	position: absolute;
+	z-index: 0;
+	content: '';
+	top: 100%;
+	left: 15%;
+	height: 10px;
+	width: 70%;
+	opacity: 1;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+	-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+	-webkit-transition-property: opacity, -webkit-transform;
+	transition-property: opacity, -webkit-transform;
+	transition-property: transform, opacity;
+	transition-property: transform, opacity, -webkit-transform;
+	letter-spacing: 2px;
+}
+.html{
+	background-image: url(../assets/images/html.png);
+	background-size: cover;
+}
+.css{
+	background-image: url(../assets/images/css.png);
+	background-size: cover;
+}
+.javascript{
+	background-image: url(../assets/images/js.png);
+	background-size: cover;
+}
+.angular{
+	background-image: url(../assets/images/angular.png);
+	background-size: cover;
+}
+.sass{
+	background-image: url(../assets/images/sass.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.jquery{
+	background-image: url(../assets/images/jquery.png);
+	background-size: cover;
+}
+.bootstrap{
+	background-image: url(../assets/images/bootstrap.png);
+	background-size: cover;
 }
 
 /* Modal view */

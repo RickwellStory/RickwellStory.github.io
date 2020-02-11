@@ -13,6 +13,7 @@
 	<link rel="shortcut icon" href="eye_logo.jpg">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.3/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/keyframes.css">
 	<link rel="stylesheet" type="text/css" href="css/share.css">
@@ -32,16 +33,16 @@
 	</div>
 	<div class="share">
 		<button class="share-toggle-button">
-			<i class="share-icon fa fa-share-alt"></i>
+			<i class="share-icon">Here</i>
 		</button>
 		<ul class="share-items">
 			<li class="share-item">
-				<a href="https://www.linkedin.com/in/yura-shliapakov/" class="share-button">
+				<a href="https://github.com/RickwellStory" class="share-button">
 					<i class="share-icon fa fa-github"></i>
 				</a>
 			</li>
 			<li class="share-item">
-				<a href="https://github.com/RickwellStory" class="share-button">
+				<a href="https://www.linkedin.com/in/yura-shliapakov/" class="share-button">
 					<i class="share-icon fa fa-linkedin"></i>
 				</a>
 			</li>
@@ -65,31 +66,55 @@
 				<header class="header-menu">
 					<section class="header-menu__personal-info">
 						<h1 class="header-menu__personal-info__name">Yurii Shliapakov</h1>
-						<p class="header-menu__personal-info__description">Front - end Developer</p>
+						<p class="header-menu__personal-info__description">Front-end Developer</p>
 					</section>
 					<div id="large-header" class="large-header">
 						<canvas id="demo-canvas"></canvas>
-						<!-- <h1 class="main-title">Spirit</span></h1> -->
 					</div>
 
 				</header>
 				<main class="main-content">
 					<section class="main-content__about">
-						<h2 class="main-content__about__h">Who am i?</h2>
+						<h2 data-aos="zoom-out-right" data-aos-delay="100" data-aos-easing="ease-out-cubic"
+						data-aos-duration="2000" class="main-content__about__h main-h">Who am i?</h2>
 						<div class="main-content__about__picture"  id="scene">
 							<div class="main-content__about__picture__img" data-depth="0.6"></div>
+							<div class="border" data-depth=".8"></div>
+							<div class="border" data-depth="1"></div>
 						</div>
-						<div class="main-content__about__content">
+						<div data-aos="flip-left"
+						data-aos-easing="ease-out-cubic"
+						data-aos-duration="2000" class="main-content__about__content">
 							<p>Hey, whats up?</p>
 							<p>Nice to see you on my page</p>
 							<p>I'm frontend developer who specialises in creative develop. As a freelancer, I have had the pleasure of working with top clients in the industry and several exciting startups.</p>
-							<p>I am proficient in HTML/CSS, JS, Jquery, Angular and enjoy the coding process</p>
+							<p>I am proficient in HTML/CSS, JS, JQuery, Angular and enjoy the coding process</p>
 							<p>Also work as a teacher at the IT Academy, have good communication skills and work well in a team</p>
 						</div>
 					</section>
-					<!-- <section class="main-content__portfolio">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit rerum sed ducimus culpa delectus nesciunt quas vitae sit error! Sunt quaerat ad, non corrupti minima quos officiis eveniet est? Voluptate rem, aliquam a ipsum blanditiis fuga aliquid itaque, omnis distinctio nulla facere. Necessitatibus eos libero inventore error laudantium enim cum recusandae, illum praesentium magni sit culpa, provident eum fuga. Molestiae veniam minima consequatur numquam, necessitatibus nemo quod beatae animi quae tenetur, alias explicabo culpa obcaecati ratione sunt commodi nisi quis ipsum architecto voluptates dolore error cum? Cumque excepturi maiores optio illo impedit, quo eveniet nemo perferendis eos molestias dignissimos. Laboriosam.
-					</section> -->
+					<section class="main-content__skills">
+						<h2 data-aos="zoom-out-left" data-aos-delay="100" data-aos-easing="ease-out-cubic"
+						data-aos-duration="2000" class="main-h">What i know?</h2>
+						<section class="main-content__skills__icons">
+							<div class="main-content__skills__icons__picture-column">
+								<div data-aos="fade-right" data-aos-delay="120" data-aos-easing="ease-out-cubic"
+								data-aos-duration="2000" class="html"></div>
+								<div data-aos="fade-left" data-aos-delay="130" data-aos-easing="ease-out-cubic"
+								data-aos-duration="2000" class="css"></div>
+								<div data-aos="fade-right" data-aos-delay="140" data-aos-easing="ease-out-cubic"
+								data-aos-duration="2000" class="javascript"></div>
+								<div data-aos="fade-left" data-aos-delay="150" data-aos-easing="ease-out-cubic"
+								data-aos-duration="2000" class="angular"></div>
+								<div data-aos="fade-right" data-aos-delay="160" data-aos-easing="ease-out-cubic"
+								data-aos-duration="2000" class="sass"></div>
+								<div data-aos="fade-left" data-aos-delay="170" data-aos-easing="ease-out-cubic"
+								data-aos-duration="2000" class="jquery"></div>
+								<div data-aos="fade-right" data-aos-delay="180" data-aos-easing="ease-out-cubic"
+								data-aos-duration="2000" class="bootstrap"></div>
+							</div>
+							<div class="main-content__skills_icons__picture-description"></div>
+						</section>
+					</section>
 				</main>
 
 			</div><!-- wrapper -->
@@ -105,6 +130,7 @@
 		</nav>
 	</div><!-- /perspective -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.3/aos.js"></script>
 	<script src="js/buble.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/menu.js"></script>
