@@ -6,6 +6,7 @@
   z-index: 999;
   -webkit-transition: all .3s;
   transition: all .3s;
+  animation: bounce-in-top 1.1s both .4s;
 }
 @media screen and (max-width: 500px){
   .share{
