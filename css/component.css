@@ -289,11 +289,13 @@ html, body, .perspective {
 	z-index: 1;
 }
 .border:nth-of-type(2){
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#a99b7662), to(#3c393965));
 	background-image:linear-gradient(#a99b7662, #3c393965);
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 .border:nth-of-type(3){
+	background-image:  -webkit-gradient(linear, left top, left bottom, from(#d9980b62), to(#6f482660));
 	background-image:  linear-gradient(#d9980b62, #6f482660);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -307,7 +309,10 @@ html, body, .perspective {
 	width: 58%;
 	height: 93%;
 	box-sizing: border-box;
+	-webkit-transition: -webkit-filter 1s;
+	transition: -webkit-filter 1s;
 	transition: filter 1s;
+	transition: filter 1s, -webkit-filter 1s;
 	z-index: 2;
 	/* box-shadow: 2px 0px 15px black; */
 }
@@ -341,28 +346,37 @@ html, body, .perspective {
 .main-content__skills__icons{
 	width: 100%;
 	height: 100%;
+	display: -webkit-box;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
 }
 .main-content__skills__icons__picture-column{
 	width: 70%;
 	height: 100%;
+	display: -webkit-box;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
 	justify-content: space-around;
-	align-items: stretch;
+	-webkit-box-align: stretch;
+	        align-items: stretch;
 	flex-wrap: wrap;
 }
 .html , .css , .javascript, .angular, .sass, .jquery, .bootstrap{
 	width: 100px;
 	height: 100px;
 	position: relative;
+	-webkit-transition: 1s;
 	transition: 1s;
 	cursor: pointer;
 }
 .html:hover , .css:hover , .javascript:hover, .angular:hover, .sass:hover, .jquery:hover, .bootstrap:hover{
-	transform: translateY(-5px) scale(1.1) !important;
+	-webkit-transform: translateY(-5px) scale(1.1) !important;
+	        transform: translateY(-5px) scale(1.1) !important;
 }
 .html::before , .css::before , .javascript::before, .angular::before, .sass::before, .jquery::before, .bootstrap::before{
 	pointer-events: none;
