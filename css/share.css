@@ -7,18 +7,20 @@
   -webkit-transition: all .3s;
   transition: all .3s;
 }
-@media screen and (max-width: 500px){
-  .share{
+
+@media screen and (max-width: 500px) {
+  .share {
     -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
-    top:15%;
+    transform: rotate(40deg);
+    top: 15%;
     left: 57%;
   }
 }
-@media screen and (max-width: 360px){
-  .share{
+
+@media screen and (max-width: 360px) {
+  .share {
     -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
+    transform: rotate(40deg);
     top: 14%;
     left: 41%;
   }
@@ -50,7 +52,6 @@
 
 .share-button {
   font-size: 30px;
-  /* background: #403f48; */
   background: #3c3939;
   -webkit-transform: scale(0.95, 0.95);
   transform: scale(0.95, 0.95);
@@ -58,18 +59,16 @@
 }
 
 a.share-button {
-  /* color: rgb(198, 200, 200); */
   color: #d9990b;
 }
 
-a.share-button:hover, 
+a.share-button:hover,
 a.share-button:focus {
   color: #f6ebeb;
 }
 
 .share-toggle-button {
   z-index: 9;
-  /* background: #403f48; */
   background: #3c3939;
   font-size: 20px;
 }
@@ -83,12 +82,14 @@ a.share-button:focus {
 .share-item {
   display: inline-block;
 }
-.fa{
+
+.fa {
   line-height: inherit;
 }
-@media screen and (max-width: 500px){
-  .share-icon{
+
+@media screen and (max-width: 500px) {
+  .share-icon {
     -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg);
+    transform: rotate(-40deg);
   }
 }

@@ -1,0 +1,36 @@
+.burger-menu {
+	width: 200px;
+	height: 150px;
+	background-color: #3c3939;
+	-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%);
+	clip-path: polygon(0 0%, 100% 0%, 100% 100%);
+	cursor: pointer;
+	position: fixed;
+	right: 0;
+	top: 0;
+	-webkit-transition: .6s;
+	transition: .6s;
+	z-index: 999;
+	-webkit-animation: scaleForBurer 2s;
+	animation: scaleForBurger 2s;
+}
+.burger-menu svg {
+	fill: #fff;
+	width: 30%;
+	height: 30%;
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	-webkit-transition: .6s;
+	transition: .6s;
+}
+
+.burger-menu:hover {
+	width: 180px;
+	height: 130px;
+}
+
+.burger-menu:hover svg {
+	-webkit-transform: scale(.8);
+	transform: scale(.8);
+}
